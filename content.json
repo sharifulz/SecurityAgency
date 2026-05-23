@@ -1,0 +1,150 @@
+{
+  "global": {
+    "contactInfo": {
+      "hotline": "09606-773355",
+      "hotlineLabel": { "en": "24 Hours", "bn": "২৪ ঘন্টা" },
+      "mobile": "+88 01787 650 583",
+      "email": "sales@examplexbd.com"
+    },
+    "nav": {
+      "home": { "en": "Home", "bn": "হোম" },
+      "about": { "en": "About Us", "bn": "আমাদের সম্পর্কে" },
+      "services": { "en": "Services", "bn": "সেবাসমূহ" },
+      "branches": { "en": "Branches", "bn": "শাখাসমূহ" },
+      "career": { "en": "Career", "bn": "ক্যারিয়ার" },
+      "contact": { "en": "Contact Us", "bn": "যোগাযোগ" }
+    },
+    "cta": { "en": "Talk to an expert!", "bn": "বিশেষজ্ঞের সাথে কথা বলুন!" },
+    "footer": {
+      "about": { 
+        "en": "Pioneers since 1988, delivering trust and reliable security solutions.",
+        "bn": "১৯৮৮ সাল থেকে অগ্রগামী, বিশ্বস্ত এবং নির্ভরযোগ্য নিরাপত্তা সমাধান প্রদান করছি।"
+      },
+      "address": {
+        "en": "House # 10, Block # B, Road No 1, Niketan, Gulshan-1, Dhaka 1212.",
+        "bn": "বাড়ি # ১০, ব্লক # বি, রোড নং ১, নিকেতন, গুলশান-১, ঢাকা ১২১২।"
+      },
+      "quickLinks": [
+        { "en": "Download Prerequisite Form", "bn": "প্রয়োজনীয় ফর্ম ডাউনলোড করুন" },
+        { "en": "Newsletter Subscription", "bn": "নিউজলেটার সাবস্ক্রিপশন" },
+        { "en": "Event Updates", "bn": "ইভেন্ট আপডেট" }
+      ],
+      "certification": "ISO: 9001: 2008 Certified."
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": { 
+        "en": "Excellence in Security for Over Three Decades.",
+        "bn": "তিন দশকেরও বেশি সময় ধরে নিরাপত্তায় শ্রেষ্ঠত্ব।"
+      },
+      "subheadline": {
+        "en": "Bangladesh's first private security company, delivering trust and reliability since 1988.",
+        "bn": "বাংলাদেশের প্রথম বেসরকারি নিরাপত্তা সংস্থা, ১৯৮৮ সাল থেকে বিশ্বস্ততা এবং নির্ভরতা প্রদান করছে।"
+      },
+      "primaryBtn": { "en": "Explore Services", "bn": "সেবাসমূহ দেখুন" },
+      "secondaryBtn": { "en": "Get a Quote", "bn": "কোটেশন পান" }
+    },
+    "stats": {
+      "years": { "value": "36+", "label": { "en": "Years of Excellence", "bn": "বছরের শ্রেষ্ঠত্ব" } },
+      "workforce": { "value": "12,000+", "label": { "en": "Workforce", "bn": "কর্মীবাহিনী" } },
+      "businesses": { "value": "15+", "label": { "en": "Businesses Secured", "bn": "নিরাপদ ব্যবসা" } }
+    },
+    "services": {
+      "title": { "en": "Our Business Areas", "bn": "আমাদের ব্যবসার ক্ষেত্র" },
+      "items": [
+        {
+          "id": "static-manpower",
+          "title": { "en": "Static Manpower Services", "bn": "কর্মী সেবা" },
+          "desc": { "en": "Trained personnel handling access control, patrol services, and emergency response.", "bn": "প্রশিক্ষিত কর্মী যারা প্রবেশাধিকার নিয়ন্ত্রণ, টহল সেবা এবং জরুরি প্রতিক্রিয়া পরিচালনা করে।" },
+          "icon": "ph-shield-check",
+          "image": "https://placehold.co/600x400/1E3A8A/FFF?text=Static+Manpower"
+        },
+        {
+          "id": "cash-in-transit",
+          "title": { "en": "Cash in Transit Service", "bn": "ক্যাশ-ইন-ট্রানজিট" },
+          "desc": { "en": "Secure transportation of cash.", "bn": "নগদ অর্থের নিরাপদ পরিবহন।" },
+          "icon": "ph-truck",
+          "image": "https://placehold.co/600x400/1E3A8A/FFF?text=Cash+in+Transit"
+        },
+        {
+          "id": "escorting-service",
+          "title": { "en": "Special Security / Escorting Service", "bn": "বিশেষ নিরাপত্তা / এসকর্টিং পরিষেবা" },
+          "desc": { "en": "Premium bodyguard and VIP protection services.", "bn": "প্রিমিয়াম দেহরক্ষী এবং ভিআইপি সুরক্ষা পরিষেবা।" },
+          "icon": "ph-user-focus",
+          "image": "https://placehold.co/600x400/1E3A8A/FFF?text=Escorting+Service"
+        },
+        {
+          "id": "electronic-security",
+          "title": { "en": "Electronic Security Service", "bn": "ইলেকট্রনিক নিরাপত্তা পরিষেবা" },
+          "desc": { "en": "Centralized operations and electronic security equipment.", "bn": "কেন্দ্রীভূত অপারেশন এবং ইলেকট্রনিক নিরাপত্তা সরঞ্জাম।" },
+          "icon": "ph-desktop",
+          "image": "https://placehold.co/600x400/1E3A8A/FFF?text=Electronic+Security"
+        },
+        {
+          "id": "cash-management",
+          "title": { "en": "Total Cash Management", "bn": "মোট ক্যাশ ব্যবস্থাপনা" },
+          "desc": { "en": "Comprehensive management and security of ATM cash.", "bn": "এটিএম ক্যাশের ব্যাপক ব্যবস্থাপনা ও নিরাপত্তা।" },
+          "icon": "ph-credit-card",
+          "image": "https://placehold.co/600x400/1E3A8A/FFF?text=Cash+Management"
+        }
+      ]
+    },
+    "about": {
+      "title": { "en": "Why Choose Us", "bn": "কেন আমাদের বেছে নেবেন" },
+      "content": {
+        "en": "In the last three decades, Examplex has positioned itself as a comprehensive security solution provider. What sets us apart is our commitment, integrity, and vision. Our 15-day intensive training program ensures our personnel are the highest calibre in the industry.",
+        "bn": "গত তিন দশকে, এক্সামপ্লেক্স নিজেকে একটি ব্যাপক নিরাপত্তা সমাধান প্রদানকারী হিসেবে প্রতিষ্ঠিত করেছে। আমাদের প্রতিশ্রুতি, সততা এবং দূরদর্শিতা আমাদের আলাদা করে। আমাদের ১৫ দিনের নিবিড় প্রশিক্ষণ কর্মসূচি নিশ্চিত করে যে আমাদের কর্মীরা শিল্পের সর্বোচ্চ মানের।"
+      }
+    },
+    "testimonials": {
+      "title": { "en": "What Our Clients Say", "bn": "আমাদের গ্রাহকরা কী বলেন" },
+      "items": [
+        {
+          "review": { 
+            "en": "One of the best security service providers. Manned, Cash carrying, security operator, monitoring and many more.",
+            "bn": "সেরা নিরাপত্তা পরিষেবা প্রদানকারীদের একজন। ম্যানড, ক্যাশ ক্যারিং, সিকিউরিটি অপারেটর, মনিটরিং এবং আরও অনেক কিছু।"
+          },
+          "author": "Shams Mohammad"
+        },
+        {
+          "review": {
+            "en": "Local Security Company providing services to Multinational companies and NGOs.",
+            "bn": "স্থানীয় সিকিউরিটি কোম্পানি বহুজাতিক কোম্পানি এবং এনজিওদের সেবা প্রদান করছে।"
+          },
+          "author": "Samsul Arefin"
+        }
+      ]
+    }
+  },
+  "inner": {
+    "services": {
+      "title": { "en": "Our Services Portfolio", "bn": "আমাদের পরিষেবার পোর্টফোলিও" },
+      "extraServices": []
+    },
+    "branches": {
+      "title": { "en": "Coverage / Branch Locator", "bn": "কভারেজ / শাখা অবস্থানকারী" },
+      "locations": [
+        { "name": { "en": "Dhaka (Gulshan, Motijheel, Badda)", "bn": "ঢাকা (গুলশান, মতিঝিল, বাড্ডা)" } },
+        { "name": { "en": "Narayanganj", "bn": "নারায়ণগঞ্জ" } },
+        { "name": { "en": "Chittagong", "bn": "চট্টগ্রাম" } },
+        { "name": { "en": "Cox's Bazar", "bn": "কক্সবাজার" } },
+        { "name": { "en": "Cumilla", "bn": "কুমিল্লা" } },
+        { "name": { "en": "Gazipur", "bn": "গাজীপুর" } },
+        { "name": { "en": "Sylhet", "bn": "সিলেট" } },
+        { "name": { "en": "Teknaf", "bn": "টেকনাফ" } }
+      ]
+    },
+    "careers": {
+      "title": { "en": "Careers / Recruitment", "bn": "ক্যারিয়ার / নিয়োগ" },
+      "intro": { "en": "We offer the highest base pay scale in the industry.", "bn": "আমরা শিল্পে সর্বোচ্চ বেস পে স্কেল অফার করি।" },
+      "jobs": [
+        {
+          "position": { "en": "Executive", "bn": "এক্সিকিউটিভ" },
+          "requirements": { "en": "MS Office, Leadership skills", "bn": "এমএস অফিস, নেতৃত্বের দক্ষতা" },
+          "location": { "en": "Sylhet", "bn": "সিলেট" }
+        }
+      ]
+    }
+  }
+}

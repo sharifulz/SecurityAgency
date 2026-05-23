@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers - Examplex</title>
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/inner.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <i class="ph ph-phone-call"></i>
+          <span data-i18n="global.contactInfo.hotline"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="ph-fill ph-shield-check"></i>
+        Examplex
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="global.nav.home"></a>
+        <a href="about.html" data-i18n="global.nav.about"></a>
+        <div class="menu-item-has-children">
+          <a href="services.html" data-i18n="global.nav.services"></a>
+          <ul class="sub-menu">
+            <li><a href="services.html#static-manpower" data-i18n="home.services.items.0.title"></a></li>
+            <li><a href="services.html#cash-in-transit" data-i18n="home.services.items.1.title"></a></li>
+            <li><a href="services.html#escorting-service" data-i18n="home.services.items.2.title"></a></li>
+            <li><a href="services.html#electronic-security" data-i18n="home.services.items.3.title"></a></li>
+            <li><a href="services.html#cash-management" data-i18n="home.services.items.4.title"></a></li>
+          </ul>
+        </div>
+        <a href="branches.html" data-i18n="global.nav.branches"></a>
+        <a href="careers.html" class="active" data-i18n="global.nav.career"></a>
+        <a href="contact.html" data-i18n="global.nav.contact"></a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <i class="ph ph-moon"></i>
+        </button>
+        <button id="lang-toggle" class="lang-switch">বাংলা</button>
+        <div id="mobile-toggle" class="mobile-toggle">
+          <i class="ph ph-list"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="inner-hero">
+    <div class="container">
+      <h1 data-i18n="inner.careers.title"></h1>
+      <p data-i18n="inner.careers.intro" style="font-size: 1.25rem; margin-top: 10px;"></p>
+      <div class="breadcrumb" style="margin-top: 20px;">
+        <a href="index.html" data-i18n="global.nav.home"></a>
+        <i class="ph ph-caret-right"></i>
+        <span data-i18n="global.nav.career"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="page-content">
+    <div class="container">
+      <div class="grid-list" id="careers-grid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Examplex. All rights reserved.</p>
+        <p data-i18n="global.footer.certification"></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <a href="tel:09606773355" class="fab fab-call" aria-label="Call Us">
+      <i class="ph-fill ph-phone-call"></i>
+    </a>
+    <a href="https://wa.me/8801787650583" target="_blank" class="fab fab-whatsapp" aria-label="WhatsApp Us">
+      <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+    <a href="#" class="fab fab-top" id="go-to-top" aria-label="Go to Top">
+      <i class="ph-bold ph-caret-up"></i>
+    </a>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/careers.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Examplex</title>
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/inner.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <i class="ph ph-phone-call"></i>
+          <span data-i18n="global.contactInfo.hotline"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="ph-fill ph-shield-check"></i>
+        Examplex
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="global.nav.home"></a>
+        <a href="about.html" class="active" data-i18n="global.nav.about"></a>
+        <div class="menu-item-has-children">
+          <a href="services.html" data-i18n="global.nav.services"></a>
+          <ul class="sub-menu">
+            <li><a href="services.html#static-manpower" data-i18n="home.services.items.0.title"></a></li>
+            <li><a href="services.html#cash-in-transit" data-i18n="home.services.items.1.title"></a></li>
+            <li><a href="services.html#escorting-service" data-i18n="home.services.items.2.title"></a></li>
+            <li><a href="services.html#electronic-security" data-i18n="home.services.items.3.title"></a></li>
+            <li><a href="services.html#cash-management" data-i18n="home.services.items.4.title"></a></li>
+          </ul>
+        </div>
+        <a href="branches.html" data-i18n="global.nav.branches"></a>
+        <a href="careers.html" data-i18n="global.nav.career"></a>
+        <a href="contact.html" data-i18n="global.nav.contact"></a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <i class="ph ph-moon"></i>
+        </button>
+        <button id="lang-toggle" class="lang-switch">বাংলা</button>
+        <div id="mobile-toggle" class="mobile-toggle">
+          <i class="ph ph-list"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="inner-hero">
+    <div class="container">
+      <h1 data-i18n="global.nav.about"></h1>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="global.nav.home"></a>
+        <i class="ph ph-caret-right"></i>
+        <span data-i18n="global.nav.about"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="page-content">
+    <div class="container" style="max-width: 800px;">
+      <div class="glass-card">
+        <h2 data-i18n="home.about.title" style="margin-bottom: 20px; color: var(--color-primary);"></h2>
+        <p data-i18n="home.about.content" style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-muted);"></p>
+        <br>
+        <p style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-muted);">
+          Since 1988, our mission has been to provide unparalleled security services. We believe that true security is built on a foundation of trust, highly-trained personnel, and the latest technology.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Examplex. All rights reserved.</p>
+        <p data-i18n="global.footer.certification"></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <a href="tel:09606773355" class="fab fab-call" aria-label="Call Us">
+      <i class="ph-fill ph-phone-call"></i>
+    </a>
+    <a href="https://wa.me/8801787650583" target="_blank" class="fab fab-whatsapp" aria-label="WhatsApp Us">
+      <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+    <a href="#" class="fab fab-top" id="go-to-top" aria-label="Go to Top">
+      <i class="ph-bold ph-caret-up"></i>
+    </a>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

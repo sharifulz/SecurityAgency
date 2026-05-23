@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examplex - The Security Expert</title>
+  <meta name="description" content="Bangladesh's first private security company, delivering trust and reliability since 1988.">
+  
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <i class="ph ph-phone-call"></i>
+          <span data-i18n="global.contactInfo.hotline"></span>
+          (<span data-i18n="global.contactInfo.hotlineLabel"></span>)
+        </div>
+        <div class="top-bar-item">
+          <i class="ph ph-device-mobile"></i>
+          <span data-i18n="global.contactInfo.mobile"></span>
+        </div>
+        <div class="top-bar-item">
+          <i class="ph ph-envelope-simple"></i>
+          <span data-i18n="global.contactInfo.email"></span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+        <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+        <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+        <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <i class="ph-fill ph-shield-check"></i>
+        Examplex
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="global.nav.home"></a>
+        <a href="about.html" data-i18n="global.nav.about"></a>
+        <div class="menu-item-has-children">
+          <a href="services.html" data-i18n="global.nav.services"></a>
+          <ul class="sub-menu">
+            <li><a href="services.html#static-manpower" data-i18n="home.services.items.0.title"></a></li>
+            <li><a href="services.html#cash-in-transit" data-i18n="home.services.items.1.title"></a></li>
+            <li><a href="services.html#escorting-service" data-i18n="home.services.items.2.title"></a></li>
+            <li><a href="services.html#electronic-security" data-i18n="home.services.items.3.title"></a></li>
+            <li><a href="services.html#cash-management" data-i18n="home.services.items.4.title"></a></li>
+          </ul>
+        </div>
+        <a href="branches.html" data-i18n="global.nav.branches"></a>
+        <a href="careers.html" data-i18n="global.nav.career"></a>
+        <a href="contact.html" data-i18n="global.nav.contact"></a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <i class="ph ph-moon"></i>
+        </button>
+        <button id="lang-toggle" class="lang-switch">বাংলা</button>
+        <a href="contact.html" class="btn btn-primary cta-btn" data-i18n="global.cta"></a>
+        <div id="mobile-toggle" class="mobile-toggle">
+          <i class="ph ph-list"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="container hero-content text-center">
+      <h1 data-i18n="home.hero.headline" class="mb-3 hero-title"></h1>
+      <p data-i18n="home.hero.subheadline" class="hero-subtitle mb-4"></p>
+      <div class="hero-buttons">
+        <a href="services.html" class="btn btn-primary btn-lg">
+          <span data-i18n="home.hero.primaryBtn"></span>
+          <i class="ph ph-arrow-right"></i>
+        </a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">
+          <span data-i18n="home.hero.secondaryBtn"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Counter -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid glass-card">
+        <div class="stat-item">
+          <h2 data-i18n="home.stats.years.value"></h2>
+          <p data-i18n="home.stats.years.label"></p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <h2 data-i18n="home.stats.workforce.value" id="workforce-counter"></h2>
+          <p data-i18n="home.stats.workforce.label"></p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <h2 data-i18n="home.stats.businesses.value"></h2>
+          <p data-i18n="home.stats.businesses.label"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-4">
+        <h2 data-i18n="home.services.title"></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="services-grid" id="services-grid">
+        <!-- Dynamically populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-section section-padding">
+    <div class="container about-container">
+      <div class="about-content">
+        <h2 data-i18n="home.about.title" class="mb-3"></h2>
+        <div class="title-underline left mb-3"></div>
+        <p data-i18n="home.about.content" class="mb-4 about-text"></p>
+        <a href="about.html" class="btn btn-secondary">
+          <span data-i18n="global.nav.about"></span>
+          <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+      <div class="about-image">
+        <div class="image-wrapper glass-card">
+          <div class="placeholder-img flex-center">
+            <i class="ph-fill ph-shield-star"></i>
+          </div>
+          <div class="floating-badge badge-1">
+            <i class="ph-fill ph-certificate"></i> ISO 9001:2008
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="ph-fill ph-clock"></i> 24/7 Security
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Carousel -->
+  <section class="client-section section-padding">
+    <div class="container">
+      <div class="slider">
+        <div class="slide-track">
+          <!-- Duplicated for infinite scroll effect -->
+          <div class="slide"><div class="logo-box">Embassies</div></div>
+          <div class="slide"><div class="logo-box">Multinationals</div></div>
+          <div class="slide"><div class="logo-box">NGOs</div></div>
+          <div class="slide"><div class="logo-box">Banks</div></div>
+          <div class="slide"><div class="logo-box">Telecoms</div></div>
+          
+          <div class="slide"><div class="logo-box">Embassies</div></div>
+          <div class="slide"><div class="logo-box">Multinationals</div></div>
+          <div class="slide"><div class="logo-box">NGOs</div></div>
+          <div class="slide"><div class="logo-box">Banks</div></div>
+          <div class="slide"><div class="logo-box">Telecoms</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonial-section section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-4">
+        <h2 data-i18n="home.testimonials.title"></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="testimonial-grid" id="testimonial-grid">
+        <!-- Dynamically populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo mb-2">
+            <i class="ph-fill ph-shield-check"></i>
+            Examplex
+          </a>
+          <p data-i18n="global.footer.about"></p>
+          <div class="social-links">
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p data-i18n="global.footer.address"></p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul id="quick-links">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Examplex. All rights reserved.</p>
+        <p data-i18n="global.footer.certification"></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <a href="tel:09606773355" class="fab fab-call" aria-label="Call Us">
+      <i class="ph-fill ph-phone-call"></i>
+    </a>
+    <a href="https://wa.me/8801787650583" target="_blank" class="fab fab-whatsapp" aria-label="WhatsApp Us">
+      <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+    <a href="#" class="fab fab-top" id="go-to-top" aria-label="Go to Top">
+      <i class="ph-bold ph-caret-up"></i>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
