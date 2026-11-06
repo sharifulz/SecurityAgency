@@ -25,9 +25,9 @@
         "bn": "বাড়ি # ১০, ব্লক # বি, রোড নং ১, নিকেতন, গুলশান-১, ঢাকা ১২১২।"
       },
       "quickLinks": [
-        { "en": "Download Prerequisite Form", "bn": "প্রয়োজনীয় ফর্ম ডাউনলোড করুন" },
-        { "en": "Newsletter Subscription", "bn": "নিউজলেটার সাবস্ক্রিপশন" },
-        { "en": "Event Updates", "bn": "ইভেন্ট আপডেট" }
+        { "en": "Download Prerequisite Form", "bn": "প্রয়োজনীয় ফর্ম ডাউনলোড করুন", "url": "contact.html" },
+        { "en": "Newsletter Subscription", "bn": "নিউজলেটার সাবস্ক্রিপশন", "url": "contact.html" },
+        { "en": "Event Updates", "bn": "ইভেন্ট আপডেট", "url": "about.html" }
       ],
       "certification": "ISO: 9001: 2008 Certified."
     }
@@ -99,20 +99,60 @@
     },
     "testimonials": {
       "title": { "en": "What Our Clients Say", "bn": "আমাদের গ্রাহকরা কী বলেন" },
+      "subtitle": {
+        "en": "Trusted feedback from organizations and institutions we protect everyday.",
+        "bn": "আমরা প্রতিদিন যে সকল সংস্থা ও প্রতিষ্ঠান রক্ষা করি তাদের বিশ্বস্ত মতামত।"
+      },
       "items": [
         {
+          "author": "Shams Mohammad",
+          "role": { "en": "Head of Corporate Security", "bn": "প্রধান কর্পোরেট নিরাপত্তা" },
+          "company": { "en": "Apex Holdings Ltd.", "bn": "এপেক্স হোল্ডিংস লিমিটেড" },
+          "rating": 5,
           "review": { 
-            "en": "One of the best security service providers. Manned, Cash carrying, security operator, monitoring and many more.",
-            "bn": "সেরা নিরাপত্তা পরিষেবা প্রদানকারীদের একজন। ম্যানড, ক্যাশ ক্যারিং, সিকিউরিটি অপারেটর, মনিটরিং এবং আরও অনেক কিছু।"
-          },
-          "author": "Shams Mohammad"
+            "en": "One of the best security service providers. Manned guarding, cash carrying, security operators, and centralized monitoring are executed with utmost precision.",
+            "bn": "সেরা নিরাপত্তা পরিষেবা প্রদানকারীদের একজন। ম্যানড গার্ডিং, ক্যাশ ক্যারিং, সিকিউরিটি অপারেটর এবং সেন্ট্রালাইজড মনিটরিং সর্বোচ্চ নির্ভুলতার সাথে পরিচালিত হয়।"
+          }
         },
         {
+          "author": "Samsul Arefin",
+          "role": { "en": "Regional Operations Manager", "bn": "আঞ্চলিক অপারেশন ম্যানেজার" },
+          "company": { "en": "Global NGO Alliance", "bn": "গ্লোবাল এনজিও অ্যালায়েন্স" },
+          "rating": 5,
           "review": {
-            "en": "Local Security Company providing services to Multinational companies and NGOs.",
-            "bn": "স্থানীয় সিকিউরিটি কোম্পানি বহুজাতিক কোম্পানি এবং এনজিওদের সেবা প্রদান করছে।"
-          },
-          "author": "Samsul Arefin"
+            "en": "Reliable security partner providing seamless 24/7 protection for multinational companies, expatriates, and humanitarian missions across remote zones.",
+            "bn": "নির্ভরযোগ্য নিরাপত্তা অংশীদার যা দূরবর্তী অঞ্চলে বহুজাতিক কোম্পানি, প্রবাসী এবং মানবিক মিশনের জন্য নিরবচ্ছিন্ন ২৪/৭ সুরক্ষা প্রদান করে।"
+          }
+        },
+        {
+          "author": "Farhana Rahman",
+          "role": { "en": "VP, General Services", "bn": "ভিপি, জেনারেল সার্ভিসেস" },
+          "company": { "en": "Prime Commercial Bank", "bn": "প্রাইম কমার্শিয়াল ব্যাংক" },
+          "rating": 5,
+          "review": {
+            "en": "Their Total Cash Management and ATM replenishment protection services are unmatched. Zero incident record over 5 continuous years of partnership.",
+            "bn": "তাদের টোটাল ক্যাশ ম্যানেজমেন্ট এবং এটিএম রিপ্লেনিশমেন্ট সুরক্ষা পরিষেবা অতুলনীয়। ৫ বছরের নিরবচ্ছিন্ন অংশীদারিত্বে শূন্য ঘটনার রেকর্ড।"
+          }
+        },
+        {
+          "author": "Marcus Vance",
+          "role": { "en": "Chief Security Officer", "bn": "চিফ সিকিউরিটি অফিসার" },
+          "company": { "en": "International Logistics Hub", "bn": "আন্তর্জাতিক লজিস্টিকস হাব" },
+          "rating": 5,
+          "review": {
+            "en": "The static manpower and rapid-response units are exceptionally disciplined. Their intensive training standard reflects clearly in guard professionalism.",
+            "bn": "স্ট্যাটিক ম্যানপাওয়ার এবং দ্রুত-প্রতিক্রিয়া ইউনিটগুলি ব্যতিক্রমীভাবে সুশৃঙ্খল। তাদের নিবিড় প্রশিক্ষণ মান গার্ডদের পেশাদারিত্বে স্পষ্টভাবে প্রতিফলিত হয়।"
+          }
+        },
+        {
+          "author": "Dr. Tariqul Islam",
+          "role": { "en": "Director of Administration", "bn": "প্রশাসন পরিচালক" },
+          "company": { "en": "Central Specialized Hospital", "bn": "সেন্ট্রাল স্পেশালাইজড হাসপাতাল" },
+          "rating": 5,
+          "review": {
+            "en": "Courteous personnel, effective access control, and electronic surveillance integration. Our patients, doctors, and staff feel completely safe around the clock.",
+            "bn": "ভদ্র কর্মী, কার্যকর অ্যাক্সেস নিয়ন্ত্রণ এবং ইলেকট্রনিক নজরদারি ইন্টিগ্রেশন। আমাদের রোগী, ডাক্তার এবং কর্মীরা চব্বিশ ঘন্টা সম্পূর্ণ নিরাপদ বোধ করেন।"
+          }
         }
       ]
     }
