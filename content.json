@@ -106,6 +106,7 @@
       "items": [
         {
           "author": "Shams Mohammad",
+          "avatar": "assets/img/person1.jpg",
           "role": { "en": "Head of Corporate Security", "bn": "প্রধান কর্পোরেট নিরাপত্তা" },
           "company": { "en": "Apex Holdings Ltd.", "bn": "এপেক্স হোল্ডিংস লিমিটেড" },
           "rating": 5,
@@ -116,6 +117,7 @@
         },
         {
           "author": "Samsul Arefin",
+          "avatar": "assets/img/person2.jpg",
           "role": { "en": "Regional Operations Manager", "bn": "আঞ্চলিক অপারেশন ম্যানেজার" },
           "company": { "en": "Global NGO Alliance", "bn": "গ্লোবাল এনজিও অ্যালায়েন্স" },
           "rating": 5,
@@ -126,6 +128,7 @@
         },
         {
           "author": "Farhana Rahman",
+          "avatar": "assets/img/person3.jpg",
           "role": { "en": "VP, General Services", "bn": "ভিপি, জেনারেল সার্ভিসেস" },
           "company": { "en": "Prime Commercial Bank", "bn": "প্রাইম কমার্শিয়াল ব্যাংক" },
           "rating": 5,
@@ -136,6 +139,7 @@
         },
         {
           "author": "Marcus Vance",
+          "avatar": "assets/img/person4.jpg",
           "role": { "en": "Chief Security Officer", "bn": "চিফ সিকিউরিটি অফিসার" },
           "company": { "en": "International Logistics Hub", "bn": "আন্তর্জাতিক লজিস্টিকস হাব" },
           "rating": 5,
@@ -146,6 +150,7 @@
         },
         {
           "author": "Dr. Tariqul Islam",
+          "avatar": "assets/img/person5.jpg",
           "role": { "en": "Director of Administration", "bn": "প্রশাসন পরিচালক" },
           "company": { "en": "Central Specialized Hospital", "bn": "সেন্ট্রাল স্পেশালাইজড হাসপাতাল" },
           "rating": 5,
