@@ -1,13 +1,14 @@
 {
-  "name": "security-agency",
+  "name": "securityagency",
   "version": "1.0.0",
   "description": "Security Agency Modern Website",
   "scripts": {
-    "build": "echo 'Static site ready for deployment'",
+    "build": "echo 'Static site ready'",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev",
     "start": "npx serve ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "wrangler": "^4.158.0"
+  }
 }
-

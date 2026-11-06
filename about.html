@@ -94,14 +94,77 @@
 
   <!-- Content -->
   <section class="page-content">
-    <div class="container" style="max-width: 800px;">
-      <div class="glass-card">
-        <h2 data-i18n="home.about.title" style="margin-bottom: 20px; color: var(--color-primary);"></h2>
-        <p data-i18n="home.about.content" style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-muted);"></p>
-        <br>
-        <p style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-muted);">
-          Since 1988, our mission has been to provide unparalleled security services. We believe that true security is built on a foundation of trust, highly-trained personnel, and the latest technology.
-        </p>
+    <div class="container">
+      <!-- Story & Image Section -->
+      <div class="about-container mb-4" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+        <div class="about-content" style="flex: 1; min-width: 300px;">
+          <span style="display: inline-flex; align-items: center; gap: 6px; margin-bottom: 12px; font-weight: 700; color: var(--color-primary); background: rgba(59,130,246,0.1); padding: 6px 16px; border-radius: 20px; font-size: 0.8125rem; letter-spacing: 0.05em; text-transform: uppercase;">
+            <i class="ph-fill ph-shield-check"></i> Pioneers Since 1988
+          </span>
+          <h2 data-i18n="home.about.title" style="margin-bottom: 20px; color: var(--color-primary); font-size: 2.25rem;"></h2>
+          <p data-i18n="home.about.content" style="font-size: 1.125rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 20px;"></p>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 28px;">
+            With more than 36 years of frontline experience, <span data-config="company.name">Examplex</span> stands as a trusted leader in corporate, industrial, and diplomatic security solutions. Our specialized training academy, rapid response teams, and electronic command center ensure absolute safety 24 hours a day, 365 days a year.
+          </p>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="ph-fill ph-check-circle" style="color: #10B981; font-size: 1.25rem;"></i>
+              <strong>ISO 9001:2008 Certified</strong>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="ph-fill ph-check-circle" style="color: #10B981; font-size: 1.25rem;"></i>
+              <strong>15-Day Academy Trained</strong>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="ph-fill ph-check-circle" style="color: #10B981; font-size: 1.25rem;"></i>
+              <strong>Nationwide Deployment</strong>
+            </div>
+          </div>
+        </div>
+        <div class="about-image" style="flex: 1; min-width: 300px;">
+          <div class="image-wrapper glass-card">
+            <img src="assets/img/why_chose_us.jpg" alt="About Operations" class="about-real-img" style="height: 380px;">
+            <div class="floating-badge badge-1">
+              <i class="ph-fill ph-certificate"></i> ISO 9001:2008
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="ph-fill ph-clock"></i> 24/7 Security
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Pillars Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 60px;">
+        <div class="glass-card" style="padding: 32px; border-radius: 16px;">
+          <div style="width: 56px; height: 56px; border-radius: 12px; background: rgba(59, 130, 246, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 20px;">
+            <i class="ph-fill ph-target"></i>
+          </div>
+          <h3 style="margin-bottom: 12px;">Our Mission</h3>
+          <p style="color: var(--color-text-muted); line-height: 1.7;">
+            To deliver unwavering, vigilant, and ethical protection services that safeguard human life, physical assets, and corporate operational continuity across Bangladesh.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 32px; border-radius: 16px;">
+          <div style="width: 56px; height: 56px; border-radius: 12px; background: rgba(59, 130, 246, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 20px;">
+            <i class="ph-fill ph-eye"></i>
+          </div>
+          <h3 style="margin-bottom: 12px;">Our Vision</h3>
+          <p style="color: var(--color-text-muted); line-height: 1.7;">
+            To set the national benchmark for modern private security through advanced tactical training, ethical discipline, and cutting-edge electronic surveillance integration.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding: 32px; border-radius: 16px;">
+          <div style="width: 56px; height: 56px; border-radius: 12px; background: rgba(59, 130, 246, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 20px;">
+            <i class="ph-fill ph-shield-star"></i>
+          </div>
+          <h3 style="margin-bottom: 12px;">Core Values</h3>
+          <p style="color: var(--color-text-muted); line-height: 1.7;">
+            Integrity above all, rigorous physical and moral standards, client transparency, and continuous readiness in any emergency scenario.
+          </p>
+        </div>
       </div>
     </div>
   </section>

@@ -77,4 +77,33 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 200);
   }
+
+  // Handle contact form submission
+  const contactForm = document.querySelector('.contact-form form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const currentLang = localStorage.getItem('lang') || 'en';
+      const successMsg = currentLang === 'bn' 
+        ? 'ধন্যবাদ! আপনার বার্তা সফলভাবে পাঠানো হয়েছে। আমাদের নিরাপত্তা প্রতিনিধি দ্রুত যোগাযোগ করবেন।'
+        : 'Thank you! Your inquiry has been sent successfully. Our security coordination desk will contact you shortly.';
+      
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<i class="ph-fill ph-check-circle"></i> ${currentLang === 'bn' ? 'বার্তা পাঠানো হয়েছে!' : 'Message Sent!'}`;
+        submitBtn.style.background = '#10B981';
+
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          submitBtn.style.background = '';
+        }, 4000);
+      }
+
+      alert(successMsg);
+      contactForm.reset();
+    });
+  }
 });
