@@ -1,0 +1,13 @@
+{
+  "name": "security-agency",
+  "version": "1.0.0",
+  "description": "Security Agency Modern Website",
+  "scripts": {
+    "build": "echo 'Static site ready for deployment'",
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
