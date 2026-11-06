@@ -1,0 +1,49 @@
+{
+  "company": {
+    "name": "Patrol Force",
+    "shortName": "Patrol Force",
+    "tagline": {
+      "en": "The Security Expert",
+      "bn": "নিরাপত্তা বিশেষজ্ঞ"
+    },
+    "about": {
+      "en": "Pioneers since 1988, delivering trust and reliable security solutions.",
+      "bn": "১৯৮৮ সাল থেকে অগ্রগামী, বিশ্বস্ত এবং নির্ভরযোগ্য নিরাপত্তা সমাধান প্রদান করছি।"
+    },
+    "establishedYear": 1988,
+    "certification": "ISO: 9001: 2008 Certified.",
+    "copyrightText": {
+      "en": "All rights reserved.",
+      "bn": "সর্বস্বত্ব সংরক্ষিত।"
+    }
+  },
+  "contact": {
+    "hotline": "09606-773355",
+    "hotlineRaw": "09606773355",
+    "hotlineLabel": {
+      "en": "24 Hours",
+      "bn": "২৪ ঘন্টা"
+    },
+    "mobile": "+88 01787 650 583",
+    "mobileRaw": "+8801787650583",
+    "email": "sales@examplexbd.com",
+    "supportEmail": "info@examplexbd.com",
+    "address": {
+      "en": "House # 10, Block # B, Road No 1, Niketan, Gulshan-1, Dhaka 1212.",
+      "bn": "বাড়ি # ১০, ব্লক # বি, রোড নং ১, নিকেতন, গুলশান-১, ঢাকা ১২১২।"
+    },
+    "googleMapsUrl": "https://maps.google.com"
+  },
+  "socialMedia": {
+    "facebook": "https://facebook.com/examplex",
+    "whatsapp": "https://wa.me/8801787650583",
+    "youtube": "https://youtube.com/@examplex",
+    "linkedin": "https://linkedin.com/company/examplex",
+    "twitter": "https://twitter.com/examplex",
+    "instagram": "https://instagram.com/examplex"
+  },
+  "defaultSettings": {
+    "theme": "light",
+    "language": "en"
+  }
+}

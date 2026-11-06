@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Examplex - The Security Expert</title>
+  <title data-is-home="true">Examplex - The Security Expert</title>
   <meta name="description" content="Bangladesh's first private security company, delivering trust and reliability since 1988.">
   
   <!-- Phosphor Icons -->
@@ -21,23 +21,26 @@
       <div class="top-bar-left">
         <div class="top-bar-item">
           <i class="ph ph-phone-call"></i>
-          <span data-i18n="global.contactInfo.hotline"></span>
-          (<span data-i18n="global.contactInfo.hotlineLabel"></span>)
+          <a href="tel:09606773355" class="config-hotline-link">
+            <span data-config="contact.hotline">09606-773355</span>
+            (<span data-config="contact.hotlineLabel">24 Hours</span>)
+          </a>
         </div>
         <div class="top-bar-item">
           <i class="ph ph-device-mobile"></i>
-          <span data-i18n="global.contactInfo.mobile"></span>
+          <a href="tel:+8801787650583" class="config-mobile-link">
+            <span data-config="contact.mobile">+88 01787 650 583</span>
+          </a>
         </div>
         <div class="top-bar-item">
           <i class="ph ph-envelope-simple"></i>
-          <span data-i18n="global.contactInfo.email"></span>
+          <a href="mailto:sales@examplexbd.com" class="config-email-link">
+            <span data-config="contact.email">sales@examplexbd.com</span>
+          </a>
         </div>
       </div>
       <div class="top-bar-right">
-        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
-        <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
-        <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
-        <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+        <!-- Dynamically rendered from config.json socialMedia -->
       </div>
     </div>
   </div>
@@ -47,7 +50,7 @@
     <div class="container navbar">
       <a href="index.html" class="logo">
         <i class="ph-fill ph-shield-check"></i>
-        Examplex
+        <span data-config="company.name">Examplex</span>
       </a>
       
       <nav class="nav-links">
@@ -151,9 +154,7 @@
       </div>
       <div class="about-image">
         <div class="image-wrapper glass-card">
-          <div class="placeholder-img flex-center">
-            <i class="ph-fill ph-shield-star"></i>
-          </div>
+          <img src="assets/img/why_chose_us.jpg" alt="Why Choose Us - Security Operations" class="about-real-img">
           <div class="floating-badge badge-1">
             <i class="ph-fill ph-certificate"></i> ISO 9001:2008
           </div>
@@ -171,17 +172,19 @@
       <div class="slider">
         <div class="slide-track">
           <!-- Duplicated for infinite scroll effect -->
-          <div class="slide"><div class="logo-box">Embassies</div></div>
-          <div class="slide"><div class="logo-box">Multinationals</div></div>
-          <div class="slide"><div class="logo-box">NGOs</div></div>
-          <div class="slide"><div class="logo-box">Banks</div></div>
-          <div class="slide"><div class="logo-box">Telecoms</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-buildings"></i> Embassies</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-globe"></i> Multinationals</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-hand-heart"></i> NGOs</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-bank"></i> Banks</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-broadcast"></i> Telecoms</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-first-aid"></i> Healthcare</div></div>
           
-          <div class="slide"><div class="logo-box">Embassies</div></div>
-          <div class="slide"><div class="logo-box">Multinationals</div></div>
-          <div class="slide"><div class="logo-box">NGOs</div></div>
-          <div class="slide"><div class="logo-box">Banks</div></div>
-          <div class="slide"><div class="logo-box">Telecoms</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-buildings"></i> Embassies</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-globe"></i> Multinationals</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-hand-heart"></i> NGOs</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-bank"></i> Banks</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-broadcast"></i> Telecoms</div></div>
+          <div class="slide"><div class="logo-box"><i class="ph-fill ph-first-aid"></i> Healthcare</div></div>
         </div>
       </div>
     </div>
@@ -190,12 +193,150 @@
   <!-- Testimonials -->
   <section class="testimonial-section section-padding">
     <div class="container">
-      <div class="section-header text-center mb-4">
-        <h2 data-i18n="home.testimonials.title"></h2>
-        <div class="title-underline"></div>
+      <div class="testimonial-top-bar">
+        <div class="testimonial-heading">
+          <div class="review-badge"><i class="ph-fill ph-star"></i> Client Feedback</div>
+          <h2 data-i18n="home.testimonials.title">What Our Clients Say</h2>
+          <div class="title-underline left"></div>
+        </div>
+        <div class="testimonial-controls">
+          <div class="review-counter">
+            <span id="review-current">01</span>
+            <span class="counter-sep">/</span>
+            <span id="review-total">05</span>
+          </div>
+          <div class="slider-nav-btns">
+            <button id="review-prev" class="review-nav-btn" aria-label="Previous review">
+              <i class="ph-bold ph-caret-left"></i>
+            </button>
+            <button id="review-next" class="review-nav-btn" aria-label="Next review">
+              <i class="ph-bold ph-caret-right"></i>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="testimonial-grid" id="testimonial-grid">
-        <!-- Dynamically populated by JS -->
+      
+      <div class="review-carousel-wrapper">
+        <div class="review-carousel-track" id="testimonial-track">
+          <!-- Card 1 -->
+          <div class="feedback-card">
+            <div class="feedback-card-header">
+              <div class="review-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <span class="verified-pill">
+                <i class="ph-fill ph-check-circle"></i> Verified Client
+              </span>
+            </div>
+            <p class="feedback-text">"One of the best security service providers. Manned guarding, cash carrying, security operators, and centralized monitoring are executed with utmost precision."</p>
+            <div class="feedback-author-row">
+              <div class="author-left">
+                <div class="feedback-avatar">S</div>
+                <div class="author-meta">
+                  <h4>Shams Mohammad</h4>
+                  <p>Head of Corporate Security • Apex Holdings Ltd.</p>
+                </div>
+              </div>
+              <i class="ph-fill ph-quotes feedback-quote-icon"></i>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feedback-card">
+            <div class="feedback-card-header">
+              <div class="review-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <span class="verified-pill">
+                <i class="ph-fill ph-check-circle"></i> Verified Client
+              </span>
+            </div>
+            <p class="feedback-text">"Reliable security partner providing seamless 24/7 protection for multinational companies, expatriates, and humanitarian missions across remote zones."</p>
+            <div class="feedback-author-row">
+              <div class="author-left">
+                <div class="feedback-avatar">S</div>
+                <div class="author-meta">
+                  <h4>Samsul Arefin</h4>
+                  <p>Regional Operations Manager • Global NGO Alliance</p>
+                </div>
+              </div>
+              <i class="ph-fill ph-quotes feedback-quote-icon"></i>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feedback-card">
+            <div class="feedback-card-header">
+              <div class="review-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <span class="verified-pill">
+                <i class="ph-fill ph-check-circle"></i> Verified Client
+              </span>
+            </div>
+            <p class="feedback-text">"Their Total Cash Management and ATM replenishment protection services are unmatched. Zero incident record over 5 continuous years of partnership."</p>
+            <div class="feedback-author-row">
+              <div class="author-left">
+                <div class="feedback-avatar">F</div>
+                <div class="author-meta">
+                  <h4>Farhana Rahman</h4>
+                  <p>VP, General Services • Prime Commercial Bank</p>
+                </div>
+              </div>
+              <i class="ph-fill ph-quotes feedback-quote-icon"></i>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feedback-card">
+            <div class="feedback-card-header">
+              <div class="review-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <span class="verified-pill">
+                <i class="ph-fill ph-check-circle"></i> Verified Client
+              </span>
+            </div>
+            <p class="feedback-text">"The static manpower and rapid-response units are exceptionally disciplined. Their intensive training standard reflects clearly in guard professionalism."</p>
+            <div class="feedback-author-row">
+              <div class="author-left">
+                <div class="feedback-avatar">M</div>
+                <div class="author-meta">
+                  <h4>Marcus Vance</h4>
+                  <p>Chief Security Officer • International Logistics Hub</p>
+                </div>
+              </div>
+              <i class="ph-fill ph-quotes feedback-quote-icon"></i>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feedback-card">
+            <div class="feedback-card-header">
+              <div class="review-stars">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <span class="verified-pill">
+                <i class="ph-fill ph-check-circle"></i> Verified Client
+              </span>
+            </div>
+            <p class="feedback-text">"Courteous personnel, effective access control, and electronic surveillance integration. Our patients, doctors, and staff feel completely safe around the clock."</p>
+            <div class="feedback-author-row">
+              <div class="author-left">
+                <div class="feedback-avatar">T</div>
+                <div class="author-meta">
+                  <h4>Dr. Tariqul Islam</h4>
+                  <p>Director of Administration • Central Specialized Hospital</p>
+                </div>
+              </div>
+              <i class="ph-fill ph-quotes feedback-quote-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-dots" id="review-dots">
+        <!-- Dynamically populated dots -->
       </div>
     </div>
   </section>
@@ -207,19 +348,16 @@
         <div class="footer-col">
           <a href="index.html" class="logo mb-2">
             <i class="ph-fill ph-shield-check"></i>
-            Examplex
+            <span data-config="company.name">Examplex</span>
           </a>
           <p data-i18n="global.footer.about"></p>
           <div class="social-links">
-            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
-            <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
-            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
-            <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+            <!-- Dynamically populated from config.json socialMedia -->
           </div>
         </div>
         <div class="footer-col">
           <h4>Address</h4>
-          <p data-i18n="global.footer.address"></p>
+          <p data-config="contact.address"></p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
@@ -229,18 +367,18 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Examplex. All rights reserved.</p>
-        <p data-i18n="global.footer.certification"></p>
+        <p>&copy; <span class="current-year">2026</span> <span data-config="company.name">Examplex</span>. <span data-config="company.copyrightText">All rights reserved.</span></p>
+        <p data-config="company.certification"></p>
       </div>
     </div>
   </footer>
 
   <!-- Floating Action Buttons -->
   <div class="floating-actions">
-    <a href="tel:09606773355" class="fab fab-call" aria-label="Call Us">
+    <a href="tel:09606773355" class="fab fab-call config-hotline-link" aria-label="Call Us">
       <i class="ph-fill ph-phone-call"></i>
     </a>
-    <a href="https://wa.me/8801787650583" target="_blank" class="fab fab-whatsapp" aria-label="WhatsApp Us">
+    <a href="https://wa.me/8801787650583" target="_blank" rel="noopener noreferrer" class="fab fab-whatsapp config-whatsapp-link" aria-label="WhatsApp Us">
       <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
     <a href="#" class="fab fab-top" id="go-to-top" aria-label="Go to Top">
@@ -249,6 +387,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/config.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/common.js"></script>

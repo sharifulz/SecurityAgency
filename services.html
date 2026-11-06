@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Examplex</title>
+  <title data-page-title="Services">Services - Examplex</title>
   
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   
@@ -18,8 +18,26 @@
       <div class="top-bar-left">
         <div class="top-bar-item">
           <i class="ph ph-phone-call"></i>
-          <span data-i18n="global.contactInfo.hotline"></span>
+          <a href="tel:09606773355" class="config-hotline-link">
+            <span data-config="contact.hotline">09606-773355</span>
+            (<span data-config="contact.hotlineLabel">24 Hours</span>)
+          </a>
         </div>
+        <div class="top-bar-item">
+          <i class="ph ph-device-mobile"></i>
+          <a href="tel:+8801787650583" class="config-mobile-link">
+            <span data-config="contact.mobile">+88 01787 650 583</span>
+          </a>
+        </div>
+        <div class="top-bar-item">
+          <i class="ph ph-envelope-simple"></i>
+          <a href="mailto:sales@examplexbd.com" class="config-email-link">
+            <span data-config="contact.email">sales@examplexbd.com</span>
+          </a>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <!-- Dynamically rendered from config.json socialMedia -->
       </div>
     </div>
   </div>
@@ -29,7 +47,7 @@
     <div class="container navbar">
       <a href="index.html" class="logo">
         <i class="ph-fill ph-shield-check"></i>
-        Examplex
+        <span data-config="company.name">Examplex</span>
       </a>
       
       <nav class="nav-links">
@@ -86,19 +104,41 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo mb-2">
+            <i class="ph-fill ph-shield-check"></i>
+            <span data-config="company.name">Examplex</span>
+          </a>
+          <p data-i18n="global.footer.about"></p>
+          <div class="social-links">
+            <!-- Dynamically populated from config.json socialMedia -->
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p data-config="contact.address"></p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul id="quick-links">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Examplex. All rights reserved.</p>
-        <p data-i18n="global.footer.certification"></p>
+        <p>&copy; <span class="current-year">2026</span> <span data-config="company.name">Examplex</span>. <span data-config="company.copyrightText">All rights reserved.</span></p>
+        <p data-config="company.certification"></p>
       </div>
     </div>
   </footer>
 
   <!-- Floating Action Buttons -->
   <div class="floating-actions">
-    <a href="tel:09606773355" class="fab fab-call" aria-label="Call Us">
+    <a href="tel:09606773355" class="fab fab-call config-hotline-link" aria-label="Call Us">
       <i class="ph-fill ph-phone-call"></i>
     </a>
-    <a href="https://wa.me/8801787650583" target="_blank" class="fab fab-whatsapp" aria-label="WhatsApp Us">
+    <a href="https://wa.me/8801787650583" target="_blank" rel="noopener noreferrer" class="fab fab-whatsapp config-whatsapp-link" aria-label="WhatsApp Us">
       <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
     <a href="#" class="fab fab-top" id="go-to-top" aria-label="Go to Top">
@@ -106,6 +146,7 @@
     </a>
   </div>
 
+  <script src="js/config.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/common.js"></script>
