@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "Security Agency Modern Website",
   "scripts": {
-    "build": "echo 'Static site ready'",
-    "deploy": "wrangler deploy",
-    "preview": "wrangler dev",
-    "start": "npx serve ."
-  },
-  "devDependencies": {
-    "wrangler": "^4.158.0"
+    "build": "echo 'Static site ready'"
   }
 }
